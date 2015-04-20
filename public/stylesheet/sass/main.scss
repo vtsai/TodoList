@@ -1,0 +1,101 @@
+#content {
+    position: relative;
+    top: 10%;
+}
+.todo {
+    margin: 0 auto;
+    position: relative;
+    width: 40%;
+    min-width: 550px;
+    font: 25px 'Helvetica Neue', Helvetica, Arial, sans-serif;
+    font-weight: 100;
+    letter-spacing: 1px;
+    color: gray;
+    box-shadow: 0 2px 4px 0 rgba(0, 0, 0, 0.2), 0 25px 50px 0 rgba(0, 0, 0, 0.1)
+}
+
+.hovering {
+    &:hover {
+        cursor: pointer;
+        color: gray;
+    }
+}
+
+.top {
+    padding: 0;
+    position: relative;
+    .todo-select {
+        position: absolute;
+        padding: 16px;
+        color: lightgray;
+        @extend .hovering;
+    }
+    .todo-input {
+        border: none;
+        outline: none;
+        font-weight: 200;
+        letter-spacing: 0;
+        width: 100%;
+        box-shadow: inset 0 -2px 1px rgba(0,0,0,0.03);
+        padding: 15px;
+        padding-left: 60px;
+    }
+}
+
+.task-select {
+    float:left;
+    padding: 1px 4px;
+    color: lightgray;
+    @extend .hovering;
+}
+
+.task {
+    display: block;
+    margin: 0 45px;
+}
+
+
+.task-list {
+    word-break: break-all;
+
+    .finished {
+        .task-select {
+            color: limegreen;
+        }
+        .task {
+            text-decoration: line-through;
+            color: lightgray;
+        }
+    }
+}
+
+.bottom {
+    height: 74px;
+    font-size: 14px;
+    color: #777;
+    padding: 20px 0;
+    margin: 0;
+    background: #fbfbfb;
+ 
+    .task-count {
+        float: left;
+        margin-left: 7px;
+        padding: 8px;
+    }
+
+    .command {
+        color: #777;
+        font-weight: 100;
+        letter-spacing: 1px;
+        outline: 0!important;
+    }
+
+    .remove {
+        float: right;
+        margin-right: 15px;
+    }
+}
+
+.hide {
+    display: none;
+}

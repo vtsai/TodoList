@@ -1,0 +1,21 @@
+{
+  "name": "todo",
+  "version": "1.0.0",
+  "description": "todo",
+  "main": "server.js",
+  "dependencies": {
+    "babel": "^5.1.10",
+    "browserify": "^9.0.8",
+    "connect": "^3.3.5",
+    "grunt-babel": "^5.0.0",
+    "react": "^0.13.1",
+    "serve-static": "^1.9.2"
+  },
+  "devDependencies": {},
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "start": "node server.js"
+  },
+  "author": "VTsai",
+  "license": "ISC"
+}
